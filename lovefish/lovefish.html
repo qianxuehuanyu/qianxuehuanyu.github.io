@@ -7,14 +7,19 @@
 </head>
 <body>
 <div class="all_bg">
+	<div class="overbutton">
+		<div id="start" onclick="start()">STRART</div>
+		<div id="restart" onclick="restart()">RESTATR</div>	
+	</div>
     <div id="allcanvas">
         <!--第一层在上，绘制大鱼小鱼，浮动物，UI，圈特效-->
         <canvas id="canvas1" width="800px" height="600px"></canvas>
         <!--第二层上绘制蓝色背景，海葵，海葵上产生的果实，-->
         <canvas id="canvas2" width="800px" height="600px"></canvas>
-
+		
     </div>
 </div>
+
 
 <script src="js/main.js"></script>
 <script src="js/commonFunctions.js"></script>

@@ -2,6 +2,7 @@
  * Created by Administrator on 2016/10/12 0012.
  */
 document.body.onload=game;
+ var overbutton=document.getElementsByClassName("overbutton")[0];
 //对象
 var can1;
 var can2;
@@ -28,6 +29,9 @@ var bfTail=[];
 var bfEye=[];
 var bfBodyOrange=[];
 var bfBodyBlue=[];
+//特征值游戏开始与重新开始；
+var key=false;
+var overshow=false;
 
 //小鱼
 var babyFish;
@@ -124,23 +128,26 @@ function gameloop(){
     deleteTime=now-lastTime;
     lastTime=now;
     if(deleteTime>40)deleteTime=40;
-
     drawBackground();
     ane.draw();
     fruitMoitor();
     fruit.draw();
     ctx1.clearRect(0,0,canWidth,canHeight);
     bigFish.draw();
-    babyFish.draw();
-    bfFruitsCollision();
-    bigBabyCollision();
-
-    data.draw();
-    wave.draw();
-    hale.draw();
+    
+    if(key){
+        babyFish.draw();
+        bfFruitsCollision();
+        bigBabyCollision();
+        data.draw();
+        wave.draw();
+        hale.draw();   
+    }
+    if(overshow){
+        overbuttonshow();
+        overshow=false;
+    }
 }
-
-
 function onMouseMove(e){
     if(!data.gameOver){
     if(e.offsetX|| e.layerX){
@@ -149,4 +156,23 @@ function onMouseMove(e){
         //console.log(bfx+":"+bfy);
     }
     }
+}
+function start() {
+    key=true;
+    overbutton.style.display="none";
+    var restart=document.getElementById("start");
+    restart.style.display="none";
+    var restart=document.getElementById("restart");
+    restart.style.display="block";
+
+}
+function restart() {
+   key=false;
+   start();
+   data.init();
+   bigFish.init();
+   babyFish.init();
+}
+function overbuttonshow() {
+    overbutton.style.display="block";
 }

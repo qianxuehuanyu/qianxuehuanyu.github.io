@@ -9,17 +9,6 @@ var babyObj= function () {
     //this.babyEye=new Image();
     //this.babyBody=new Image();
     //this.babyTail=new Image();
-
-    //小鱼动画控制：时间+图片计数
-    this.babayTailTimer=0;
-    this.babyTailCount=0;
-
-    this.babyEyeTimer=0;
-    this.babyEyeCount=0;
-    this.babyEyeInterval=1000;
-
-    this.babyBodyTimer=0;
-    this.babyBodyCount=0;
 };
 babyObj.prototype.init= function () {
     this.x=canWidth/2-50;
@@ -28,6 +17,16 @@ babyObj.prototype.init= function () {
     //this.babyBody.src="src/babyFade0.png";
     //this.babyTail.src="src/babyFade0.png";
     this.angle=0;
+    //初始化 小鱼动画控制：时间+图片计数
+     this.babayTailTimer=0;
+    this.babyTailCount=0;
+
+    this.babyEyeTimer=0;
+    this.babyEyeCount=0;
+    this.babyEyeInterval=1000;
+
+    this.babyBodyTimer=0;
+    this.babyBodyCount=0;
 };
 babyObj.prototype.draw= function () {
 //ctx1画布上

@@ -34,6 +34,7 @@ function lerpAngle(a, b, t) {
 
 function lerpDistance(aim, cur, ratio) {
 	var delta = cur - aim;
+	// console.log(delta,ratio);
 	return aim + delta * ratio;
 }
 

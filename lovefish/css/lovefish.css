@@ -10,6 +10,37 @@ body{
     width:800px;
     height: 600px;
     margin: 0 auto;
+    position: relative;
+}
+.overbutton{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: '黑体';
+    background: rgba(255, 255, 255, 0.2);
+    display: block;
+    transition: 2s;
+}
+#start{
+    float: left;
+    margin-top:25%;
+    margin-left:45%;
+}
+#start:hover{
+    cursor: pointer;
+}
+#restart{
+    float: right;
+    margin-top:20%;
+    margin-right: 46.8%;
+    display: none;
+}
+#restart:hover{
+    cursor: pointer;
 }
 #allcanvas{
     position: relative;

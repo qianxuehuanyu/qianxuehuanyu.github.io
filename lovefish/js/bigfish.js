@@ -10,18 +10,7 @@ var bfObj= function () {
     //this.bfBody=new Image();
     //this.bfTail=new Image();
     
-    //大鱼动画控制：时间+图片计数
-    this.bfTailTimer=0;
-    this.bfTailCount=0;
-
-    this.bfEyeTimer=0;
-    this.bfEyeCount=0;
-    this.bfEyeInterval=1000;
-
-    this.bfBodyCount=0;
-
-
-
+    
 };
 bfObj.prototype.init= function () {
     //大鱼对象初始化
@@ -31,6 +20,13 @@ bfObj.prototype.init= function () {
     //this.bfBody.src="src/bigSwim0.png";
     //this.bfTail.src="src/bigTail0.png";
     this.angle=0;
+    //初始化 大鱼动画控制：时间+图片计数
+    this.bfTailTimer=0;
+    this.bfTailCount=0;
+    this.bfEyeTimer=0;
+    this.bfEyeCount=0;
+    this.bfEyeInterval=1000;
+    this.bfBodyCount=0;
 
 };
 bfObj.prototype.draw=function(){
@@ -38,6 +34,7 @@ bfObj.prototype.draw=function(){
 //渐进移动，鼠标趋向，使用封装好的函数lerpDistance
     this.x =lerpDistance(bfx,this.x,0.99);
     this.y =lerpDistance(bfy,this.y,0.99);
+    // console.log(this.x,this.y);
 
     //delatetime每一帧都进行角度变换
     //正切Math.atan2(y,x)

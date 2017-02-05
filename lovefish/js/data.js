@@ -8,6 +8,13 @@ var dataObj= function () {
     this.gameOver=false;
     this.alpha=0;
 };
+dataObj.prototype.init= function () {
+    this.fruitNum=0;
+    this.double=1;
+    this.score=0;
+    this.gameOver=false;
+    this.alpha=0;
+};
 dataObj.prototype.reset= function () {
     this.fruitNum=0;
     this.double=1;
@@ -24,11 +31,13 @@ dataObj.prototype.draw= function () {
     ctx1.fillText("scroe:"+this.score,w/2,h-30);
     if(data.gameOver){
         this.alpha+=deleteTime*0.0005;
-        if(this.alpha>1)this.alpha=1;
+        if(this.alpha>1){
+            this.alpha=1;
+            overshow=true;
+        }
         ctx1.font="40px Verdana";
         ctx1.fillStyle="rgba(255,255,255,"+this.alpha+")";
         ctx1.fillText("GAME"+"\n"+"OVER",w/2,h/2);
-
     }
     ctx1.restore();
 };
