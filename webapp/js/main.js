@@ -29,8 +29,9 @@ var fontem = parseInt(window.getComputedStyle(document.documentElement, null)["f
 
     }
 window.onload = function(){
+    alert("提示！在移动端场景下查看最佳! ");
     init();
-    alert("提示！在移动端场景下查看最佳！")
+    
     //这里很关键，canvas自带两个属性width、height,我理解为画布的分辨率，跟style中的width、height意义不同。
     //最好设置成跟画布在页面中的实际大小一样
     //不然canvas中的坐标跟鼠标的坐标无法匹配
