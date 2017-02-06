@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+
+    <link rel="stylesheet" href="css/swiper-3.2.7.min.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/myself.css"/>
+    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+    <title></title>
+</head>
+<body>
+<div id="musicBtn" style="position: absolute;top: 0;right: 2%;z-index:1000;"><img  src="img/musicBtn.png" style="width: 60px;height: 60px;">
+    <audio id="player" loop="loop" autoplay="autoplay" controls="controls" src="img/music.mp3" style="display: none;"></audio>
+
+</div>
+<!--
+<div style="position: absolute;bottom: 5px;left: 46%;z-index: 1000;" class="ani" swiper-animate-effect="tonext" swiper-animate-duration="1s" swiper-animate-delay="0s">
+    <img src="img/arrow-up.png" style="width: 30px"/>
+</div>
+-->
+<!--<div class="totop" style="position: absolute;bottom: 5px;left: 46%;z-index: 1000;">-->
+    <!--<img src="img/arrow-up.png" style="width: 30px"/>-->
+<!--</div>-->
+
+<div class="swiper-container1" id="container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="indexTop">
+                <img src="img/indexTxt.png" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.2s"/>
+                <img src="img/indexFlowers01.png" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.4s"/>
+                <img src="img/indexFlowers02.png" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.6s"/>
+            </div>
+            <div class="indexPlane" id="indexPlane">
+                <img src="img/indexFlight.png" class="ani" swiper-animate-effect="zoomInDown" swiper-animate-duration="1s" swiper-animate-delay="0.8s"/>
+            </div>
+            <div class="indexBot">
+                <img src="img/indexBuilding.png"/>
+            </div>
+            <div class="indexEle" id="indexEle" >
+                <div class="ani" swiper-animate-effect="pulse" swiper-animate-duration="1s" swiper-animate-delay="1.2s">
+                <img src="img/indexCloud.png" alt="" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.4s"/>
+                <img src="img/indexElements.png" alt="" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.4s"/>
+                <img src="img/indexStars.png" alt="" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.4s"/>
+                </div>
+            </div>
+            <div style="position: absolute;bottom: 5px;left: 46%;z-index: 1000;" class="ani" swiper-animate-effect="tonext" swiper-animate-duration="2s" swiper-animate-delay="3.3s">
+                <img src="img/arrow-up.png" style="width: 30px"/>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="early-bg fadeIn animated" style="background-color:rgba(0,7,26,1);">
+                <img src="img/wasBg.jpg"  class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0s" style="width: 100%"/>
+                <div  class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1s" style="width: 100%">
+                    <img src="img/wasStar.png" class="ani" swiper-animate-effect="fadeInRight " swiper-animate-duration="1s" swiper-animate-delay="1s" style="width: 100%;z-index: 10;">
+                </div>
+
+                <div class="ITFarm">
+                    <img src="img/wasFarm.png" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s" style="width: 100%">
+                    <img src="img/wasIT.png" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2s" style="width: 100%">
+                </div>
+            </div>
+            <div style="position: absolute;bottom: 5px;left: 46%;z-index: 1000;" class="ani" swiper-animate-effect="tonext" swiper-animate-duration="2s" swiper-animate-delay="3s">
+                <img src="img/arrow-up.png" style="width: 30px"/>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="early-bg fadeIn animated" style="background-color:rgba(0,7,26,1);height: 100%;">
+                <div class="ani" swiper-animate-effect="fadeOut" swiper-animate-duration="1s" swiper-animate-delay="8.5s" style="position: absolute;width: 100%;height: 100%;">
+                <img src="img/123wqe12e.png"  class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0s" style="width: 100%;height: 100%;"/>
+                </div>
+                <div class="ani" swiper-animate-effect="fadeOut" swiper-animate-duration="1s" swiper-animate-delay="3.7s" style="position: absolute;width: 100%;height: 100%;">
+                        <div class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s" style="position: absolute;width: 100%;height: 100%;">
+                        <img src="img/earlyBuilding.png" style="width: 100%;height: 70%;bottom: 0;position: absolute;" >
+                        <div style="width: 13%;height: 4.5%;background-color: gold;opacity: 0.6; position: absolute;top:38%;right: 18.5%;">
+                        </div>
+                        </div>
+                        <img src="img/earlyTitle.png" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="2s" style="position: absolute;top:10%;left: 0;width: 25%;height: 6%;z-index: 11;">
+                </div>
+
+                <div class="ani" swiper-animate-effect="fadeOut" swiper-animate-duration="1s" swiper-animate-delay="7.5s" style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;">
+                    <div class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="4.7s" style="position: absolute;width: 100%;height: 100%;top: 0;left: 0;">
+                        <img src="img/lastBusStation.png" style="width: 100%;position: absolute;bottom: 0;height: 55%;">
+                        <img src="img/bus.png" style="width: 55%;position: absolute;left: 0;bottom: 20px;" class="ani" swiper-animate-effect="slideOutLeft" swiper-animate-duration="1s" swiper-animate-delay="5.7s">
+                        <img src="img/lastBusAvatar.png" style="position: absolute;right: 5%;bottom: 20px;;width: 25%" class="ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="5.7s">
+                        <img src="img/lastBusTitle.png" style="position: absolute;top:10%;left: 0;width: 35%;height: 6%;z-index: 11;">
+                    </div>
+                </div>
+
+                <div class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="7.5s" style="position: absolute;width: 100%;height: 100%;z-index: -1;">
+                    <img src="img/12edassadf.png" style="width: 100%;height: 100%;">
+                    <img src="img/myTeamWall.png" style="position: absolute;right:0;height: 62%;width:20%;bottom:0;">
+                </div>
+                <div class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="9.5s" style="width: 100%;height: 100%;">
+                <img src="img/myTeamAvatar.png"   style="position: absolute;top: 28%;right:6%;width: 20%;">
+                </div>
+                <div style="width: 100px;left: 40px;top:30%;position: absolute;">
+                    <img src="img/qianfang.png" style="width: 100px;" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="10.5s">
+                    <img src="img/jiaoxia.png" style="width: 100px;"  class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="11.5s">
+                    <img src="img/xingkong.png" style="width: 100px;"  class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="12.5s">
+                    <img src="img/diandiandian.png" style="width: 100px;"  class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="13.5s">
+                    <img src="img/diandiandian.png" style="width: 100px;"  class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="14s">
+                    <img src="img/diandiandian.png" style="width: 100px;"  class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="14.5s">
+                </div>
+            </div>
+            <div style="position: absolute;bottom: 5px;left: 46%;z-index: 1000;" class="ani" swiper-animate-effect="tonext" swiper-animate-duration="2s" swiper-animate-delay="16s">
+                <img src="img/arrow-up.png" style="width: 30px"/>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="early-bg fadeIn animated" style="background-color:rgba(0,7,26,1);height: 100%;">
+                <img src="img/lightOffBg.jpg" style="width: 100%;height: 100%;">
+                <img src="img/cornerWall.png" style="width:20%;height: 80%;position: absolute;right: 0;bottom: 0;">
+                <img src="img/lightOff.png" style="width: 30%;height: 80%;position: absolute;left: 0%;bottom: 2%;">
+                <div style="width: 42px;height: 37px;left: 7%;top:25.4%;position: absolute;z-index: 11;" id="lightOnOff"></div>
+                <img src="img/cornerTitle.png" style="width: 40%;height: 7%;position: absolute;
+                right: 0;top:16%;" class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0s">
+                <img src="img/lightOn.png" style="width: 10%;height: 29%;position: absolute;left: 21%;bottom: 19.2%;" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+                <img src="img/lightOn.png" style="width: 6%;height: 15.8%;position: absolute;left: 44.5%;bottom: 21.5%;" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+
+                <img src="img/lightOn.png" style="width: 30%;height: 80%;position: absolute;left: 0%;bottom: 2%;display: none;z-index: 111; " id="lightOn" >
+
+                <div style="width: 100%;height: 100%;position: absolute;top:0;left:0;" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+                    <img src="img/clickGuide.png" style="width: 58%;height: 3.5%;position: absolute;left: 18%;top:30%;" class="inclick">
+                </div>
+                <div style="width: 100%;height: 100%;z-index: 100;position: absolute;top: 0;left: 0;background-color: #00B7FF;display: none;"  id="addanimate">
+                    <img src="img/qingtian.png" style="width: 90%;position: absolute;left: 0;top:16%;z-index: 11;display: none;" >
+                    <img src="img/lightOnBgfinfish.png" style="width: 100%;height: 100%;position:absolute;left: 0;top:0;display: none;">
+                    <img src="img/lightFlowers.png" style="width: 110px;height: 90px;position: absolute;bottom: 2%;right: 5%;display: none;">
+                    <div class="totop" style="position: absolute;bottom: 5px;left: 46%;z-index: 1000;">            <img src="img/arrow-up.png" style="width: 30px"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="early-bg fadeIn animated" style="background-color:rgba(0,7,26,1);height: 100%;">
+                <img src="img/aboutBg1.png" style="width: 100%;height:100%;position: absolute;left: 0;bottom:0;">
+                <img src="img/footCity.jpg" style="width: 100%;height: 30%;position: absolute;
+                left: 0;top: 0;" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0s">
+                <img src="img/footAvatar.png" style="width: 56%;height: 27%;position: absolute;
+                top:21%;right: 5%;" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                <div class="ani" swiper-animate-effect="fadeOut" swiper-animate-duration="1s" swiper-animate-delay="4.5s" style="width: 100%;height: 100%;position:absolute;top: 0;left: 0;">
+                    <img src="img/footTa.png" style="width: 90%;height: 22%;position: absolute;
+                top:64%;left: 4%;" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="2s">
+                </div>
+                <img src="img/footTx.png" style="width: 80%;height: 16%;position: absolute;
+                top:64%;left: 11%;" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="5.5s">
+            </div>
+            <div style="position: absolute;bottom: 5px;left: 46%;z-index: 1000;" class="ani" swiper-animate-effect="tonext" swiper-animate-duration="2s" swiper-animate-delay="6s">
+                <img src="img/arrow-up.png" style="width: 30px"/>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="early-bg fadeIn animated" style="background-color:rgba(0,7,26,1);height: 100%;">
+            <img src="img/runBg.jpg" style="width: 100%;height: 100%;position:absolute;top: 0;left: 0;"/>
+                <div>
+                <img src="img/runAvatar.png" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1.5s" swiper-animate-delay="0.3s" style=" width: 37%;height: 37%;position:absolute;top: 4%;right: 63%;">
+                </div>
+            <img src="img/runTxt.png" style="width: 80%;height: 17%;position:absolute;top: 68%;left: 12%;" class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="5s">
+                <div style="width: 100%;height: 100%;position:absolute;top: 0;left: 0;" class="ani" swiper-animate-effect="fadeOut" swiper-animate-duration="1s" swiper-animate-delay="4s">
+            <img src="img/runTa.png" style="width: 90%;height: 22%;position:absolute;top: 64%;left: 4%;" class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+                </div>
+            </div>
+            <div style="position: absolute;bottom: 5px;left: 46%;z-index: 1000;" class="ani" swiper-animate-effect="tonext" swiper-animate-duration="2s" swiper-animate-delay="6s">
+                <img src="img/arrow-up.png" style="width: 30px"/>
+            </div>
+        </div>
+
+        <div class="swiper-slide swiper-no-swiping" >
+            <div class="swiper-button-prev" style="display: none;"></div>
+            <div class="early-bg fadeIn animated" style="background-color:#5d5d5d;height: 100%;overflow: hidden;">
+                <div class="ggl" id="top1">
+                    <canvas id="c1" class="canvas"></canvas>
+                </div>
+                <div style="width:100%;height: 100%;position: absolute;z-index: 100;">
+                <img src="img/round_07.png" style="width: 58%;height: 23%;position: absolute;left: -17%;top: -1%;">
+                <img src="img/round_11.png" style="width: 47%;height: 21%;position: absolute;left: 63%;top: 10%;">
+                    <img src="img/round_16.png" style="width: 43%;height: 17%;position: absolute;left: 58%;top: 40%;">
+                    <img src="img/round_09.png" style="width: 46%;height: 20%;position: absolute;left: 61%;top: 62%;">
+                    <img src="img/round_08.png" style="width: 50%;height: 23%;position: absolute;left: -13%;top: 28%;">
+                    <img src="img/round_04.png" style="width: 48%;height: 16%;position: absolute;left: -11%;top: 58%;">
+                    <img src="img/round_14.png" style="width: 64%;height: 24%;position: absolute;left: 13%;top: 83%;">
+            </div>
+                <div class="inhline" id="inhline" style="overflow: auto">
+                    <div>
+                    <h2>**王晓伟**</h2>
+                    <h4>负责：WiFi与网设</h4><a class="inbottom"></a>
+                    <span>
+                    <img src="img/wang.png" style="width: 100%;"/>
+                    </span>
+                    </div>
+                    <div>
+                    <br/><h2>**厉震宇**</h2>
+                    <h4>负责：H5+前端</h4><a class="inbottom"></a>
+                    <span>
+                    <img src="img/qianduan.png" style="width:100%;"></span>
+                    </div>
+                    <div>
+                    <br/><h2>**姚远**</h2>
+                    <h4>负责：UI与美工</h4><a class="inbottom"></a>
+                        <span>
+                    <img src="img/ui.png" style="width: 100%;"></span>
+                    </div>
+                    <div>
+                    <br/><h2>**张勋**</h2>
+                    <h4>负责：安卓指导</h4><a class="inbottom"></a>
+                        <span>
+                    <img src="img/anzhuo.png" style="width:100%;"></span>
+                    </div>
+                    <div>
+                    <br/><h2>**施方方**</h2>
+                    <h4>负责：Java与后端</h4><a class="inbottom"></a>
+                        <span>
+                    <img src="img/java.png" style="width:100%;"></span>
+                    </div>
+                    <div><br/>
+                    <h2>**于洋洋**</h2>
+                    <h4>负责：活动策划</h4><a class="inbottom"></a>
+                        <span>
+                    <img src="img/huodong.png" style="width:100%;"></span>
+                    </div>
+                </div>
+                <div id="prev1" style="position: absolute;bottom: 5px;left: 1%;z-index: 500;padding: 1%" class="ani" swiper-animate-effect="tonext" swiper-animate-duration="2s" swiper-animate-delay="0s">
+                    <img src="img/arrow-up.png" style="width: 30px"/>
+                </div>
+                <div id="prev2" style="position: absolute;bottom: 5px;right: 1%;z-index: 500;padding: 1%" class="ani" swiper-animate-effect="tonext" swiper-animate-duration="2s" swiper-animate-delay="0s">
+                    <img src="img/arrow-up.png" style="width: 30px"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="swiper-scrollbar"></div>-->
+</div>
+<script src="js/swiper-3.2.7.min.js"></script>
+<script src="js/swiper.animate1.0.2.min.js"></script>
+<script src="js/myself.js"></script>
+<script src="js/mian.js"></script>
+</body>
+</html>
