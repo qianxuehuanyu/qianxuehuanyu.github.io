@@ -1,0 +1,171 @@
+*{margin: 0;padding: 0;}
+body{color: #606060;font: 12px/150% Arial, Tahoma,"宋体";}
+a{text-align: center;text-decoration: none;color: #606060;}
+a:hover {cursor: pointer;color: #8cb91e;text-decoration: underline;}
+ol,ul li {list-style: none outside none;}
+h2, h3 { font: bold 14px '微软雅黑';}
+/*top*/
+.tAdvertisement{width: 100%;height: 100px;overflow: hidden;}
+.tAdvertisementImg{position: relative;left: 50%;margin-left: -950px;display: block;
+height: 100%}
+/*header=list+logo+nav*/
+/*--------list*/
+.hList{width: 100%;height: 32px;background-color: #f5f5f5;}
+.hList ul{height:100%;list-style: none;}
+.hList ul li{height: 100%;display: inline-block;line-height: 32px;}
+.hList .hList_liTransparent{width: 70px;height: 100%;display: inline-block;float: left;}
+.hList .hList_liLeft{float: left;}
+.hList .hList_liRight{float: right;}
+.hList .cityinfo{background: url(../images/index.png) no-repeat -101px 0;    position: relative; z-index: 100; padding-left: 15px;}
+.hList .citytext{display:inline-block;position: relative;}
+.hList .cityoutchoose{position: relative;z-index: 3;display: inline-block; height: 30px;  line-height: 32px; padding: 0 20px 0 14px;}
+.hList .cityoutchoose:hover{text-decoration: none;cursor: pointer;}
+.hList .cityoutchoosed{position: absolute;display: inline-block; line-height: 32px;  padding: 0 20px 0 14px; ;color:#3a9900;background-color: white; top:-1px;right: -73px;border: 1px solid #3a9900;border-bottom: white;z-index: 100;height: 33px;}
+.hList .cityoutchoosed:hover{text-decoration: none;cursor: pointer;}
+.hList .selecticron{display: inline-block;width:6px;height: 3px;margin: 0px 0 0 5px;vertical-align: middle;background: url(../images/index.png) no-repeat -92px 0;overflow: hidden;}
+.hList .citys{position: absolute;top: 31px;left: 77px;width: 282px;border: 1px solid #3a9900;padding: 6px 12px 6px 15px;background: #fff;color: #757575;display: block;height: 330px; }
+.hList .deeptext{
+    font-weight: bold;color: #111;}
+.hot-city {margin-bottom: 6px;overflow: hidden;}
+.city-title {width: 60px; }
+.city-title{float: left;line-height: 20px;}
+.hot-city-name {float: left;line-height: 20px;width: 220px;
+    margin-left: 2px;}
+.hot-city-name span {display: inline-block;float: left;width: 44px;height: 18px;line-height: 18px;
+    margin: 1px 0;text-align: center;overflow: hidden;}
+.hot-city-name span a {display: block;text-decoration: none;color: #606060;}
+.hot-city-name span a:hover{background: #2d8900;color: #fff;}
+.site-input {  height: 27px;  line-height: 27px;}
+.site-input span {position: relative;  float: left;  height: 25px;  padding: 0 10px;  margin-right: 8px;  border: 1px solid #d2d2d2;  cursor: pointer;}
+.province {width: 80px;}
+.site-input span.cur {border-color: #3a9900;}
+.site-input span em {font-style: normal;}
+.site-input span s {  position: absolute;  top: 11px;  left: 50px;  width: 23px;  height: 8px;
+background: url(../images/index.png) no-repeat 13px -40px;  display: none;}
+.city {width: 76px;}
+.abridge-city {  margin-top: 16px;  margin-bottom: 5px;  padding: 10px 0;  background: #f5f5f5;
+overflow: hidden;}
+.abridge {  width: 29px;text-align: right;}
+.abridge, .city-name {float: left;line-height: 24px;}
+.city-name {  width: 250px;}
+.city-name span {  float: left;  width: 50px;  height: 24px;  line-height: 24px;  overflow: hidden;}
+.city-name span a {display: inline-block;padding: 0 7px;  text-decoration: none;color:#606060; }
+.city-name span a:hover{background: #2d8900;color: #fff;}
+.closebtn {position: absolute;width: 11px;height: 11px;  top: 5px;right: 5px;background: url(../images/base.png) no-repeat -98px 0;cursor: pointer;overflow: hidden;}/*重用X-----*/
+.hList .welcome{margin-right: 10px;}
+.hList .iTem {margin-right: 10px;}
+.hList .username {margin-right: 10px;}
+.hList .myaccount{position: relative;z-index: 3;display: inline-block; height: 30px;  line-height: 32px;top :0px; padding: 0;}
+.hList .myaccount:hover .myaccount_cont{display: block;}
+.hList .myaccount:hover .text{background-color: white;border: 1px solid #3a9900;border-bottom: 1px solid white;}
+.hList_liRight li {float: left;padding: 0 10px 0 11px;}
+.cart a:before {content: '';display: block;float: left;width: 11px;height: 11px;margin: 10px 3px 0 0;  background: url(../images/index.png) no-repeat -78px 0;}
+.line {margin: 0 -10px;color: #e3dde3;}
+.myaccount_cont{position: absolute;  width: 184px;  top: 30px;  left: 0px;  border: 1px solid #3a9900;  padding: 5px;  background-color: #fff;  z-index: 101;display: none;}
+.text{position: relative;z-index: 103; display: inline-block;   height: 30px;
+    line-height: 30px;padding: 0 10px 0 14px;border: 1px solid #f5f5f5;  cursor: pointer;}
+.myaccount_cont .login {padding-left: 7px;color: #999;}
+.myaccount_cont .login span {float: left;width: 86px;overflow: hidden;}
+.myaccount_cont .a_item li a {position: relative;display: inline-block;height: 25px;padding: 0 7px;
+    line-height: 25px; color: #6c6c6c;}
+.myaccount_cont .a_item li a:hover { background-color: #f5f5f5; text-decoration: none;}
+.myaccount_cont .a_item li { float: left;width: 90px; padding: 0;}
+.backexchange {overflow: hidden;}
+.backexchange .icbcexchange {width: 43px;height: 15px;margin: 8px 0 0 2px; background: url(../images/base.png) no-repeat 0 0;display: inline-block;float: left;}
+.backexchange .zhongxinexchange {width: 43px;height: 15px;margin: 8px 70px 0 12px; background: url(../images/base.png) no-repeat 0 -20px;display: inline-block;float: left;}
+/*--------logo*/
+.hLogo{width: 100%;height:153px;}
+.hLogo a{margin-top: 35px; display:inline-block;}
+.hLogo .hLogo_logo{margin-left: 70px;float: left;}
+.hLogo .hLogo_ad{margin-left: 10px;float: left;}
+.hLogo .hLogo_phone{margin-right: 70px;float: right;}
+.hLogo .search_wrap {width: 625px;margin: 47px 0 0 48px;float: left;}
+.hLogo .search_wrap .search_c {float: left;width: 584px;height: 38px;border: 2px solid #c30000;}
+.hLogo .form:before{content: '';position: absolute;top: 11px;left: 10px;display: block;
+    width: 16px;height: 16px;background: url(../images/index.png) no-repeat -69px -24px;}
+.hLogo .form {position: relative; float: left;}
+.hLogo .form input {width: 450px;height: 38px;padding-left: 32px;font: 14px/36px "微软雅黑";
+    color: #c30000; border: none;}
+.hLogo .form input:focus { outline: 0;}
+.hLogo .btn {width: 100px;height: 38px;float: right;margin-right: 0;}
+.hLogo .btn button {width: 100px;height: 38px;font: 18px "微软雅黑";color: #fff;background-color: #c30000;border: none;cursor: pointer;}
+.hLogo .search_wrap .search_r {margin-top: 2px;float: right;line-height: 16px;color: #999;
+    font-size: 14px !important;font-family: "微软雅黑";}
+.hLogo .search_wrap .search_b {height: 18px;padding-top: 8px;clear: both;overflow: hidden;}
+.hLogo .search_wrap .search_b a {margin-right: 18px;color: #757575;margin-top: 0px!important;}
+
+.hNav{width: 100%;height: 46px;background-color: white;border-bottom: 2px solid #318700;}
+.hNav .main_nav_wrap {position: relative;height: 46px;z-index: 999;margin-left:70px;float: left;}
+.hNav .main_nav_wrap .head {width: 210px;height: 46px;line-height: 46px;color: #fff;font-size: 16px;
+    text-align: center;background-color: #2d8800;}
+.hNav .main_nav_wrap .cont {position: relative;width: 210px;height: 410px;padding: 12px 0 28px 0;display: none; background-color: #3ea600;}
+.hNav .main_nav_wrap .all_kinds {float: left;position: absolute;top: 2px;left: 0;}
+.hNav .all_kinds .kinds {float: left;height: 39px;width: 100%;}
+.hNav .all_kinds:hover .cont{display: block;}
+.hNav .kinds .h3_title b {display: block;float: left;width: 18px;height: 18px;margin: 6px 16px 0 0; background-position: 0 0;}
+.hNav .kinds .h3_title {width: 172px;height: 32px;padding: 0 19px 0 19px;line-height: 32px; font-size: 14px; overflow: hidden;}
+.hNav .h3_title .kind { margin-right: 2px;}
+.hNav .h3_title a {font-weight: normal;color: #fff;}
+.hNav .h3_title:hover{width: 172px;background: #fff;}
+.hNav .h3_title:hover .kind{color: #3a9900;}
+.hNav .h3_title:hover b{background-position: -19px 0; }
+.hNav .kinds .sub_kinds {position: absolute;top: 0px;left: 210px;z-index: 30;display: none;
+    width: 757px;height: 419px;padding: 30px 15px 0 15px;border-right: 1px solid #3a9900; border-bottom: 1px solid #3a9900;background-color: #fff;overflow-y: auto;}
+.hNav .kinds:hover .sub_kinds{ display: block;}
+.hNav .sub_kinds .kinds-box {position: relative;width: 757px;height: 419px;overflow: hidden;}
+.hNav .sub_kinds .c_kinds {position: absolute;left: 0;top: 0;}
+.hNav .sub_kinds .sub_head {position: relative;float: left;width: 86px;height: 22px;font: bold 13px/22px "微软雅黑";color: #333;padding: 6px 20px 6px 0;text-align: right;}
+.hNav .sub_head i {position: absolute;right: 10px;top: 15px;width: 4px;height: 6px;
+    background: url(../images/index.png) no-repeat -98px 0; overflow: hidden;}
+.hNav .sub_kinds .sub_cont {float: left;width: 580px;line-height: 30px;overflow: hidden;padding-top: 6px;padding-bottom: 9px;margin-bottom: 3px;border-bottom: 1px solid #eaeaea;}
+.hNav .sub_cont .sub_kind {float: left;height: 16px;margin: 5px 0;line-height: 16px;
+    border-left: 1px solid #dedede;/* width: 100px; */}
+.hNav .sub_kind a {display: inline-block;color: #757575;padding: 0 8px;}
+.hNav .sub_kind a:hover{color: #3ea600 !important;}
+.hNav .nav {width: 760px;height: 46px;padding-left: 219px;float: left;}
+.hNav .nav li{display: inline-block;float: left;}
+.hNav .nav .title {display: inline-block;height: 38px;margin: 5px 0 3px 0px;padding: 0 11px;
+    font: 16px/38px "Microsoft YaHei"; text-align: center;color: #383838;}
+.hNav .nav .title:hover{color: #3ea600;display: inline-block;height: 38px;margin: 5px 0 3px 0px;padding: 0 11px;font: 16px/38px "Microsoft YaHei"; text-align: center; }
+.hNav .min_cart {float: right;position: relative;right: 0;z-index: 100;margin-right: 70px;}
+.hNav .min_cart .btn {display: inline;position: absolute;top: -3px;right: 0px;width: 180px;height: 18px;padding: 9px 10px 16px;margin: 5px 1px 1px;line-height: 22px;text-align: center;color: #098A00;
+  cursor: pointer;}
+.hNav .btn .cart-icon {display: inline-block;width: 27px;height: 20px;vertical-align: middle;
+    background: url(../images/index.png) no-repeat -47px 0;}
+.hNav .cart-icon i {position: absolute;left: 50px;top: -8px;width: 25px;height: 20px;font: 12px/16px "微软雅黑";background: url(../images/index.png) no-repeat -10px -40px;text-align: center;font-style: normal;color: #fff;overflow: hidden;}
+.hNav .btn .intext {display: inline-block;height: 20px;line-height: 20px; vertical-align: middle;margin-left: 15px;font-family: "微软雅黑";font-size: 14px;color: #383838;border: none;}
+.hNav .btn .arrow {float: right;width: 10px;height: 6px;margin: 10px 18px 0 5px;
+    background: url(../images/index.png) no-repeat 0 -40px;overflow: hidden;}
+.hNav .min_cart .cart_cont {display: none;position: absolute;top: 48px;right: 0px; z-index: 104;height: 100px;
+    width: 343px;padding: 15px 0px 8px 15px;background-color: #fff;border: 1px solid #3a9901;
+    overflow: hidden;display: none;}
+.hNav .min_cart .free {line-height: 20px;text-align: center;}
+.hNav .free span {display: inline-block;width: 100%;height: 46px;margin-bottom: 6px;
+    background: url(../images/cart-no.jpg) no-repeat center;}
+.hNav .free a {display: inline-block; width: 100%; color: #c40000;}
+.hNav .min_cart:hover .btn{    top: 1px; z-index: 105; height: 22px; margin: 0; border: 1px solid #3a9901; border-bottom: none;  background-color: #fff;}
+.hNav .min_cart:hover .arrow {background-position: 0 -34px;}
+.hNav .min_cart:hover .cart_cont{display: block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

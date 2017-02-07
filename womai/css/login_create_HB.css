@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body {
+    font: 12px/150% Arial, Tahoma,"宋体";
+    color: #606060;
+}
+a {
+    color: #606060;
+}
+input, a, select {
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    border: 0px;
+}
+ol, ul li {
+    list-style: none outside none;
+}
+.login_content {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.login_content .header {
+    width: 100%;
+    height: 88px;
+    padding-top: 8px;
+}
+.header .header_logo {
+    width: 210px;
+    height: 80px;
+    float: left;
+    padding-left: 10px;
+}
+.header .header_adv {
+    width: 780px;
+    height: 80px;
+    float: right;
+}
+.header .header_line {
+    width: 100%;
+    height: 3px;
+    float: left;
+    background: url(../images/login.png) 0px 0px repeat-x;
+    margin-top: 5px;
+    display: inline;
+    overflow: hidden;
+}
+.clear {
+    clear: both;
+    height: 0px;
+    overflow: hidden;
+    font-size: 0;
+}
+
+#footer {
+    padding-top: 20px;
+    background: #efefef;
+}
+.ac {
+    text-align: center;
+}
+#footer li {
+    line-height: 26px;
+}
+.w {
+    width: 1000px;
+    margin: 0 auto;
+}
+.beian {
+    display: inline-block;
+    width: 200px;
+}
+.beian img {
+    float: left;
+}
+.w span {
+    display: inline-block;
+    margin-top: -4px;
+}
+#footer .s4 {
+    height: 28px;
+    background: #8cb91e;
+}

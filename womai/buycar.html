@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wd购物车</title>
+    <link rel="stylesheet" href="css/mybuycar.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+
+</head>
+<body>
+<section name="header">
+    <div class="header">
+        <div style="float: right">
+        <a href="login.html">Hi，欢迎来到我买网！请先登录</a> |
+        <a href="newcreate.html">免费注册</a>
+        <a href="myaccoount.html">我的账户</a>
+    </div></div>
+</section>
+<section name="logo">
+    <div class="logo">
+        <div style="float: left">
+            <a href="womai.html"><img src="images/20130425103306539.jpg"></a>
+        </div>
+        <div class="logoright">
+        </div>
+    </div>
+</section>
+<section>
+    <div class="inlocal">
+        <h2>我的购物车</h2>
+        <span>送至：</span>
+        <span class="text">浙江杭州<i></i></span>
+        <a href="womai.html" style="float: right;">继续购物>>  </a>
+    </div>
+</section>
+<section name="price">
+    <div class="inwomai">我买网发货单(1)</div>
+    <div class="inwomairight">
+        <div class="jiesuan">
+            已选商品(含预估运费)：
+            <em >￥ <em id="j-totalwithdelivery">29.00</em></em>
+            <button></button>
+        </div>
+    </div>
+</section>
+<section name="shangpin">
+    <div style="width: 100%" id="choosed">
+        <ul class="shangpinul">
+            <li style="width: 500px;">商品</li>
+            <li style="width: 100px;">单价</li>
+            <li style="width: 100px;">数量</li>
+            <li style="width: 100px;">重量</li>
+            <li style="width: 100px;">小计</li>
+            <li style="width: 100px;">操作</li>
+        </ul>
+        <div style="width: 100%;height: 30px;"></div>
+
+    </div>
+</section>
+<footer name="footerInformation">
+    <div class="footer"><div class="helper width"><ul class="mode_wrap"><li class="mode"><h3><span class="icon icon1"></span><span class="title"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="新手上路" href="http://sh.womai.com/Info/IncludeHelpInfo-cid=50111.htm" target="_blank" rel="nofollow">新手上路</a></span></h3><ul class="cont"><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="新用户演示" href="http://sh.womai.com/Info/IncludeHelpInfo.do?cid=55806" target="_blank" rel="nofollow">新用户演示</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="会员积分计划" href="http://sh.womai.com/Info/IncludeHelpInfo.do?cid=54010" target="_blank" rel="nofollow">会员积分计划</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="会员等级规则" href="http://sh.womai.com/Info/IncludeHelpInfo.do?cid=55705" target="_blank" rel="nofollow">会员等级规则</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="售后服务政策" href="http://sh.womai.com/Info/IncludeHelpInfo.do?cid=50119" target="_blank" rel="nofollow">售后服务政策</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="我买网发票制度" href="http://sh.womai.com/Info/IncludeHelpInfo.do?cid=334416" target="_blank" rel="nofollow">我买网发票制度</a></li></ul></li><li class="mode"><h3><span class="icon icon2"></span><span class="title"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="付款方式" href="http://sh.womai.com/Info/IncludeHelpInfo-cid=50109.htm" target="_blank" rel="nofollow">付款方式</a></span></h3><ul class="cont"><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="支付方式" href="http://sh.womai.com/Info/InfoDetail-id=60008.htm" target="_blank" rel="nofollow">支付方式</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="支付常见问题" href="http://sh.womai.com/Info/InfoDetail-id=60009.htm" target="_blank" rel="nofollow">支付常见问题</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="激活礼品卡" href="http://sh.womai.com/Info/IncludeHelpInfo.do?cid=54013" target="_blank" rel="nofollow">激活礼品卡</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="我买卡" href="http://sh.womai.com/Info/IncludeHelpInfo.do?cid=58402" target="_blank" rel="nofollow">我买卡</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="电子礼品卡说明及使用规则" href="http://sh.womai.com/Info/IncludeHelpInfo.do?cid=358815" target="_blank" rel="nofollow">电子礼品卡说明及使用</a></li></ul></li><li class="mode"><h3><span class="icon icon3"></span><span class="title"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="配送信息" href="http://sh.womai.com/Info/IncludeHelpInfo-cid=50110.htm" target="_blank" rel="nofollow">配送信息</a></span></h3><ul class="cont"><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="配送运费信息" href="http://www.womai.com/Info/AboutUsDetail-id=56411.htm" target="_blank" rel="nofollow">配送运费信息</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="生鲜速配运费标准" href="http://www.womai.com/Info/AboutUsDetail-id=408976.htm" target="_blank" rel="nofollow">生鲜速配运费标准</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="订单处理时间" href="http://sh.womai.com/Info/InfoDetail-id=59806.htm" target="_blank" rel="nofollow">订单处理时间</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="验货与拒收政策" href="http://sh.womai.com/Info/IncludeHelpInfo.do?cid=56900" target="_blank" rel="nofollow">验货与拒收政策</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="用券订单结算说明" href="http://sh.womai.com/Info/IncludeHelpInfo.do?cid=204440" target="_blank" rel="nofollow">用券订单结算说明</a></li></ul></li><li class="mode"><h3><span class="icon icon4"></span><span class="title"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="我买提示" href="http://sh.womai.com/Info/IncludeHelpInfo-cid=54022.htm" target="_blank" rel="nofollow">我买提示</a></span></h3><ul class="cont"><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="找回密码" href="http://sh.womai.com/Info/InfoDetail-id=60010.htm" target="_blank" rel="nofollow">找回密码</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="联系我们" href="http://sh.womai.com/Info/InfoDetail-id=59807.htm" target="_blank" rel="nofollow">联系我们</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="常见热点问题" href="http://sh.womai.com/Info/IncludeHelpInfo.do?cid=54023" target="_blank" rel="nofollow">常见热点问题</a></li><li class="cont_list"><a name="_gatrack_event_footer" data-ga="footer" data-gatext="顾客意见" href="http://sh.womai.com/Info/IncludeHelpInfo.do?cid=54025" target="_blank" rel="nofollow">顾客意见</a></li></ul></li></ul><div class="ervma clearfix"><dl class="fl"><dt>微信服务号</dt><dd><img class="lazyload" src="http://pic2.womai.com/upload/backend/2016/04/16/13/1460784082988.png"></dd></dl><dl class="fl"><dt>我买网微信</dt><dd><img class="lazyload" src="http://pic2.womai.com/upload/backend/2016/04/16/13/1460784096978.jpg"></dd></dl></div></div><div class="clear"></div><div class="about_wrap"><div class="about width"><div class="links"><a href="http://www.womai.com/Info/AboutUsDetail.do?id=60003" target="_blank">关于我们</a><span>|</span><a href="http://www.cofco.com/cn/index.html" target="_blank">中粮集团</a><span>|</span><a href="http://www.womai.com/Info/FriendLink.do" target="_blank">友情链接</a><span>|</span><a href="http://www.womai.com/hot/" target="_blank">搜索热词</a><span>|</span><a href="http://www.womai.com/Info/AboutUsDetail-id=88801.htm" target="_blank">免责条款</a><span>|</span><a href="http://www.womai.com/Info/InfoDetail.do?id=59807" target="_blank">客户电话：400-005-5678</a></div><div class="footer-2016 clearfix"><div class="pic fl"><a href="http://sh.womai.com/index-31208-0.htm" target="_blank"><img class="lazyload" src="http://pic2.womai.com/upload/backend/2016/04/17/07/1460850889109.jpg"></a></div><div class="copyright fl"><div>Copyright©2009-2016 我买网上购物 All Rights Reserved 中粮海优（北京）有限公司版权所有</div><div>中粮海优（北京）有限公司 北京市朝阳区朝阳门南大街8号18F-09室</div><div class="beian">
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102000458">
+            <img src="http://static.womai.com/zhongliang/city/common/images/beian.png">
+            <p>京公网安备 11010102000458号</p>
+        </a>
+        <p>&nbsp;&nbsp;京ICP备 13003995号&nbsp;&nbsp;</p>
+    </div><div>营业执照（统一社会信用代码）91110000055590239L&nbsp;&nbsp;食品经营许可证：JY11105020028185</div></div></div><div class="Integrity width"><a href="http://search.cxwz.org/cert/l/CX20111018000688000658" target="_blank" rel="nofollow"><img src="http://static.womai.com/zhongliang/city/common/images/bottom_img_02.png" class="lazyload" alt="诚信网站标识"></a><script src="https://kxlogo.knet.cn/seallogo.dll?sn=2011071300100011458&amp;ct=df"></script></div></div></div></div>
+</footer>
+</body>
+<script src="js/choosed.js"></script>
+</html>

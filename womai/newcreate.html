@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="css/login_create_HB.css">
+    <link rel="stylesheet" href="css/createMain.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+</head>
+<body>
+<div class="login_content">
+    <div class="header">
+        <div class="header_logo">
+            <a href="womai.html" target="_blank"><img data-order="100" src="https://passport.womai.com/upload/2013/4/25/20130425103306539.jpg" width="210" height="80" alt="" border="0"></a>
+        </div>
+        <div class="header_adv"></div>
+        <div class="header_line"></div>
+        <div class="clear"></div>
+    </div>
+    <!-- header 头部结束 -->
+    <div class="main">
+
+        <div class="main_content registmain_cont">
+            <div class="mc_outside">
+                <div class="mc_inside">
+                    <div class="mci_title">
+                        注册我买网
+                        <p class="mcitit_p">
+                            已有我买网账号？<a href="login.html">登录</a>
+                        </p>
+                    </div>
+                    <div class="mci_content">
+                        <form action="" method="post" id="newcreateform">
+                            <div class="mcicont_input parentCls">
+                                <input id="Email" name="EmailOrPhone" class="cont_input long_input inputElem" required="required">
+                                <label id="EmailLabel" for="Email" class="prompt_login" style="display: inline;">邮箱/手机</label>
+                                <div id="EmailMsg" class="input_error"></div>
+                            </div>
+
+                            <div class="mcicont_input">
+                                <input id="loginId" name="loginId" class="cont_input long_input" required="required">
+                                <label id="loginIdLabel" for="loginId" class="prompt_login" style="display: inline;">用户名</label>
+                                <div id="loginIdMsg" class="input_error"></div>
+                            </div>
+                            <div class="mcicont_input">
+                                <input id="password" name="password" type="password" class="cont_input long_input" required="required">
+                                <label id="passwordLabel" for="password" class="prompt_login" style="display: inline;">密码</label>
+                                <div id="passwordMsg" class="input_error"></div>
+                            </div>
+                            <div class="mcicont_input">
+                                <input id="password2" name="password2" type="password" class="cont_input long_input" required="required">
+                                <label id="password2Label" for="password2" class="prompt_login" style="display: inline;">确认密码</label>
+
+                                <div class="mcicont_line" id="public_mcicont_line">
+                                    <div class="mciline_aright">
+                                        <a href="#">看不清 换一张
+                                        </a>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div id="password2Msg" class="input_error"></div>
+                            </div>
+
+                            <div class="mcicont_input" id="publicvalidateCode">
+                                <input id="validateCode" name="validateCode" class="cont_input short_input" required="required">
+                                <label id="validateCodeLabel" for="validateCode" class="prompt_login" >验证码</label>
+                                <a class="input_img" href="#">
+                                    <img src="images/validationCode.do" name="ValidateCode" style="height:25px;" title="看不清，点击换一张" id="ValiCodeForRegister"></a>
+                                <div class="clear"></div>
+                                <div id="validateCodeMsg" class="input_error valid_error"></div></div>
+
+
+                            <div class="mcicont_line">
+                            <div class="mciline_left" style="display:block; margin-top: 8px;">
+                            <a target="_blank" href="#">阅读《我买网网上商城服务条款》</a>
+                            </div>
+                                <br>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="mcicont_btn spe_mcicbtn" id="checkChange">
+                                <input id="submitBtn" type="submit" class="mcibtn_aleft" value="同意并注册">
+            <span class="mcibtn_spright" onclick="checkChange()">我有邀请码</span>
+                                <div class="ma_input" style="display: none;">
+                                    <input id="invitationCode" name="invitationCode" class="input_new">
+                                    <label id="invitationCodeLabel" for="invitationCode" class="prompt_login" style="display: inline;">输入邀请码（选填）</label>
+
+                                </div>
+                                <i style="display: none;"></i>
+                            </div>
+                            <div class="reginfo_tr4" style="margin: 40px 0 0 20px; display: none;" id="afterMsg"></div>
+                            <div style="clear: both;"></div>
+                            <input value="" type="hidden" name="providerName">
+
+        </form></div></div></div></div>
+
+
+
+    </div>
+</div>
+
+
+<!--底部-->
+<ul id="footer" class="ac"><li class="w s2">Copyright©2009-2016 我买网上购物 All Rights Reserved 中粮海优（北京）有限公司版权所有<br>中粮海优（北京）有限公司 北京市朝阳区朝阳门南大街8号18F-09室<br><div class="beian">
+    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010102000458">
+
+        <img src="images/beian.png">
+        <p>京公网安备 11010102000458号</p>
+    </a>
+</div>
+    <span>京ICP备 13003995号 营业执照（统一社会信用代码）91110000055590239L 食品经营许可证（社会信用代码）05559023-9</span></li><li class="s4"></li></ul>
+<!--cookie-->
+<script>
+    console.log("cookie");
+    console.log($.cookie("username"));
+</script>
+</body>
+<script src="js/createproving.js"></script>
+<script src="js/onfocus_onblur.js"></script>
+<script src="js/newcreate.js"></script>
+<script src="js/createsubmit.js"></script>
+</html>
