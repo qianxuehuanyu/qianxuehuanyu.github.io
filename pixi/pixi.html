@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hello World</title>
+</head>
+<script src="js/pixi.min.js"></script>
+<script src="js/tink.js"></script>
+<script src="js/spriteUtilities.js"></script>
+
+<body>
+    <video id="videoA1Mp4"  src="./images/a1.mp4" style="position:absolute;width: 70%;margin:20% 4%; display: none;z-index: 10000" controls="controls" preload="auto" ></video>
+
+<script type="text/javascript">
+    var type = "WebGL";
+    if(!PIXI.utils.isWebGLSupported()){
+        type = "canvas"
+    }
+
+    PIXI.utils.sayHello(type)
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
