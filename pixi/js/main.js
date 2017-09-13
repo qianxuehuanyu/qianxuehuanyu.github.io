@@ -24,8 +24,6 @@ videoA1Mp4.addEventListener('loadedmetadata', function () {
 //renderer.view.style.position = "absolute";
 renderer.view.style.display = "block";
 renderer.autoResize = true;
-window.innerWidth=window.innerWidth*0.8;
-window.innerHeight=window.innerHeight*0.8;
 renderer.resize(window.innerWidth, window.innerHeight);
 //Add the canvas to the HTML document
 document.body.appendChild(renderer.view);
