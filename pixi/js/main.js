@@ -14,9 +14,18 @@ var renderer= autoDetectRenderer(
     256, 256,
     {antialias: false, transparent: false, resolution: 1}
 );
+var _w,_h;
+var videoA1Mp4=document.getElementById("videoA1Mp4");
+videoA1Mp4.addEventListener('loadedmetadata', function () {
+    _w=videoA1Mp4.videoWidth;
+    _h=videoA1Mp4.videoHeight;
+
+});
 //renderer.view.style.position = "absolute";
 renderer.view.style.display = "block";
 renderer.autoResize = true;
+window.innerWidth=window.innerWidth*0.8;
+window.innerHeight=window.innerHeight*0.8;
 renderer.resize(window.innerWidth, window.innerHeight);
 //Add the canvas to the HTML document
 document.body.appendChild(renderer.view);
@@ -259,11 +268,13 @@ function setup() {
     anySprite33.scale.y=1.5;
     anySprite33.x=-400;
     anySprite33.y=window.innerHeight-anySprite33.height;
+
     var texture = PIXI.Texture.fromVideo("images/a1.mp4");
     videoMP4 = new PIXI.Sprite(texture);
     videoMP4.x=window.innerWidth;
-    videoMP4.y=window.innerHeight/5;
+    videoMP4.y=window.innerHeight/10;
     videoMP4.alpha=0;
+
     videoText = u.text("跳过视频", "38px Futura", "white", window.innerWidth-10, window.innerHeight-100);
     videoText.alpha=0;
     stage.addChild(videoText);
@@ -276,11 +287,11 @@ function setup() {
     yuebingText1.x=window.innerWidth/2-yuebingText1.width/2;
     yuebingText1.y=-100-4*yuebingText1.height;
     yuebingText2.x=window.innerWidth/2-yuebingText2.width/2;
-    yuebingText2.y=-100-3*yuebingText2.height;
+    yuebingText2.y=-100-3*yuebingText2.height+20;
     yuebingText3.x=window.innerWidth/2-yuebingText3.width/2+2;
-    yuebingText3.y=-100-2*yuebingText3.height;
+    yuebingText3.y=-100-2*yuebingText3.height+40;
     yuebingText4.x=window.innerWidth/2-yuebingText4.width/2;
-    yuebingText4.y=-100-1*yuebingText4.height;
+    yuebingText4.y=-100-1*yuebingText4.height+60;
 
     yuebingText5.x=window.innerWidth/2-yuebingText5.width/2;
     yuebingText5.y=window.innerHeight/2+50;
@@ -300,6 +311,7 @@ function setup() {
     stage.addChild(yuebingText5);
     stage.addChild(yuebingImage);
 }
+
 
 //点击事件
 var click1=100;var click2=200;var click3=300;var click4=400;var click5=500;var click6=600;
@@ -437,25 +449,29 @@ function playInto() {
         }
         if(anySprite333==10200){
             if (click5 == 250) {
+
                 anySprite33.alpha=0;
                 anySprite33.scale.x=0;
                 click5 = 0
             }
         }
     }
+
     if(click5==0){
-        stage.addChild(videoMP4);
+        videoMP4.alpha=0;
+        videoA1Mp4.style.display='block';
+        videoA1Mp4.addEventListener('ended', function () {
+            timeMS=1;
+        });
         videoPlay();
-        var IntTimeMS=parseInt(timeMS/60);
-        if(IntTimeMS>90){
+        if(timeMS==1){
             click6=0;
-        }else{
-            timeMS++;
         }
     }
     if(click6==0){
-        videoMP4.alpha=0;
         videoMP4.scale.x=0;
+        videoA1Mp4.style.display='none';
+
         videoText.alpha=0;
         videoText.scale.x=0;
 
@@ -464,7 +480,7 @@ function playInto() {
 
 
 
-        if(yuebingText1.y>20){
+        if(yuebingText1.y>140){
 
         }else{
             yuebingText1.y+=10;
@@ -479,11 +495,11 @@ function playInto() {
 
 function videoPlay(){
     videoMP4.x=0;
-    videoMP4.y=window.innerHeight/5;
+    videoMP4.y=window.innerHeight/10;
     videoMP4.alpha+=0.1;
 
     videoText.x=window.innerWidth/2-videoText.width/2;
-    videoText.y=window.innerHeight/5+videoMP4.height+50;
+    videoText.y=window.innerHeight/5+videoA1Mp4.style.height+50;
     videoText.alpha+=0.1;
 
     //if(videoMP4.x<window.innerWidth/2-videoMP4.width/2){
